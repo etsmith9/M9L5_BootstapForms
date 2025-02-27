@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Solutions</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+<body>
+    <header id="home" class="header">
+        <div class="container text-center">
+            <div class="header-text">
+                <h1>Welcome to Tech Solutions</h1>
+                <p>Your partner in tech! </p>
+            </div>
+        </div>
+    </header>
+
+    <aside id="contact-me" class="container my-4 bg-light p-3 rounded">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="h4">Contact Me</h1>
+                <form action="/submit" method="post" class="p-3 rounded needs-validation" novalidate>
+                    <fieldset>
+                        <legend class="h6">Contact Information</legend>
+                        
+        <!--Task 1, create multi-column form-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                                <label for="full-name">Full Name</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please enter your full name.</div>
+                            </div>
+                        </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                    <label for="email">Email</label>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9][10]" required>
+                    <label for="phone">Phone number</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                </div>
+            </fieldset>
+    
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message here" required> </textarea>
+                    <label for="message">message</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+    
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>  
+    </aside>
+
+    <!--Task 2, Create a inline form layout for a contact form aligned horizontally-->
+
+    <form class="container row row-cols-lg-auto g-3 align-items-center">
+        <div class="col">
+            <label class="visually-hidden" for="fullName">Full Name</label>
+            <div class="input-group">
+                <div class="input-group-text">Full Name</div>
+                <input type="text" class="form-control" id="fullName" placeholder="First & Last Name">
+            </div>
+        </div>
+    
+        <div class="col">
+            <label class="visually-hidden" for="emailAddress">Email Address</label>
+            <div class="input-group">
+                <div class="input-group-text">Email Address</div>
+                <input type="email" class="form-control" id="emailAddress" placeholder="Enter Email Here">
+            </div>
+        </div>
+
+        <div class="col">
+            <label class="visually-hidden" for="phoneNumber">Phone Number</label>
+            <div class="input-group">
+                <div class="input-group-text">Phone Number</div>
+                <input type="phone" class="form-control" id="phoneNumber" placeholder="Enter Phone Number Here" pattern="[0-9][10]">
+            </div>
+        </div>
+    
+        <div class="col">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+    </form>
+    
+    <!--Task 3, Create Stacked Form Field with labels above input box-->
+    <form class="container mb-3 mt-4">
+        <div class="mb-3">
+            <label for="name" class="form-label">First and Last Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name here:">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your email here:">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone number:</label>
+            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number here:" pattern="[0-9][10]">
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+    </form>
+
+    
+    
+</body>
+</html>
+  
